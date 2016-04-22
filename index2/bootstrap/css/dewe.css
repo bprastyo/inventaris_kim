@@ -1,0 +1,65 @@
+.lebar{margin-left: 10%; margin-right: 10%; background-color: #fff;}
+
+.contact-us {
+    max-width: 60%;
+    padding: 20px 30px;
+    margin: 0 auto 20px;
+    background-color: #fff;
+border-radius: 8px;
+  }
+/***************** Extra Style (Can be removed) ***********/
+*{
+ margin: 0px; padding: 0px;
+}
+.header, .footer{
+font-family: verdana;
+font-size: 12px;
+}
+.header a,.footer a{
+font-size: 12px;
+text-decoration: underline;
+}
+.blog-name a{
+font-family: verdana;
+background: #FFD987;
+height: 30px;
+border-bottom: 2px solid #BEBEBE;
+font-size: 20px;
+padding-left: 20%;
+display: block;
+color: black;
+text-decoration: none;
+line-height: 30px;
+}
+.blog-post{
+background: #E8F0F6;
+height: 30px;
+
+padding-left: 20%;
+line-height: 30px;
+border-bottom: 1px solid #BEBEBE;
+}
+.blog-post a{
+  color : black;
+font-size: 16px;
+line-height: 25px;
+}
+.footer{
+background: #E8F0F6;
+height: 30px;
+font-size: 16px;
+padding-left: 10%;
+line-height: 30px;
+width: auto;
+margin-bottom: 40px;
+}
+.footer span a{
+ margin: 5px;
+ font-weight: bold;
+ color: #135879
+}
+
+.profil{padding-left: 3%; padding-right: 3%; padding-top: 3%; text-align: center;}
+.logo{width: 25%; float: left; padding: 1% 1%;}
+.text{width: 70%; font-family: arial; font-size: 50px; float: right; padding-top: 2%;}
+.kata{font-family: arial; font-size: 10px; text-align: left; position: absolut;}
