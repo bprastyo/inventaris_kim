@@ -12,15 +12,10 @@
   <!-- Default panel contents -->
 
   <div class="panel-heading"><b>Laporan Barang Masuk</b></div>
+  <a href="crud/laporan/masuk_print.php" target="_blank"><button type="button" class="btn btn-danger pull-right"><i class="fa fa-print"></i> Print</button></a>
   <div id="tampil">
   <!-- Table -->
-  <form method="POST" action="crud/laporan/a.php" target="_blank">
-    <select class="form-control" id="kdtanggal" name="kdtanggal">
-    <?php $pdo=$saripdo->prepare("select*from tb_sparepart_masuk");
-          $pdo->execute(); foreach ($pdo as $pdo){ ?>
-  <option value="<?php echo $pdo['Tanggal_masuk'];?>"><?php echo $pdo['Tanggal_masuk'];?></option>
-  <?php } ?></select>
-</form>
+
   <table class="table">
 <td><center><b>Nomor_masuk</b></td><center><b> <td><center><b>Tanggal_masuk</b></td><center><b> <td><center><b>Kode_barang</b></td><center><b> <td><center><b>Nomor_pembelian</center></b></td><td><center><b>Jumlah</center></b></td>
 

@@ -7,10 +7,10 @@ $permintaan=$pdoa->fetch();
 $d=(date('Y-m-d'));
 ?>
 <?php
-$number=$saripdo->prepare("select*from tb_sparepart_keluar ORDER BY Nomor_permintaan DESC LIMIT 1");
+$number=$saripdo->prepare("select*from tb_permintaan ORDER BY No_permintaan DESC LIMIT 1");
 $number->execute();
 $nume=$number->fetch();
-$autono=$nume['Nomor_permintaan'];
+$autono=$nume['No_permintaan'];
 ?>
 <div class="panel">
 <table class="table">

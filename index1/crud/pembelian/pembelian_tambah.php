@@ -16,7 +16,7 @@ $d=(date('Y-m-d'));
 ?>
 
 <link rel="stylesheet" href="bootstrap/css/dewe.css">
-<div class="container">
+<div class="container-flue">
      <form class="contact-us form-horizontal" method="post">
    <legend>PEMBELIAN BARANG</legend>
    <div class="form-group">
@@ -52,7 +52,7 @@ $d=(date('Y-m-d'));
    <div class="control-group">
      <div class="controls">
      <button type="button" class="btn btn-primary" onclick="pembelian_s();">Beli</button>
-     <button type="reset" class="btn">Cancel</button>
+     <button type="reset" class="btn" onclick="sperpart()">Cancel</button>
        </div>
    </div>
    </form>

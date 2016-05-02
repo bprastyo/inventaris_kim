@@ -1,3 +1,4 @@
+<div id="isia"></div>
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
@@ -12,7 +13,9 @@
 
   <div class="panel-heading"><b>DAFTAR BARANG</b></div>
   <div id="tampil">
-  <button type="button" class="btn btn-danger pull-right" onclick="sperpart_tambah_kategori()" >+ Tambah Daftar Barang</button>
+  <button type="button" class="btn btn-danger pull-right" onclick="sperpart_tambah_kategori()" >+ Tambah Daftar Barang</button>&nbsp;
+  <class="pull-right"">.
+  <button type="button" class="btn btn-danger pull-right" onclick="sperpart()" ><i class="fa fa-refresh"></i></button>
   <!-- Table -->
   <table class="table">
     <tr><td><center><b>KODE BARANG</b></td><td><center><b>NAMA BARANG</b></td><td><center><b>JUMLAH</b></td><td><center><b>AKSI</b></td></center>

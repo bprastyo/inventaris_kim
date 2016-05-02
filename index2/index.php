@@ -44,7 +44,7 @@ include_once"header.php"; ?>
               <ul class="treeview-menu">
                 <li><a href="javascript:void(0)" onclick="permintaan()"><i class="fa fa-circle-o"></i>Permintaan Keluar</a></li>
                 <li><a href="javascript:void(0)" onclick="pembelian_kel()"><i class="fa fa-circle-o"></i>Permintaan Masuk</a></li>
-                <li><a href="javascript:void(0)" onclick="permintaan_tam()"><i class="fa fa-circle-o"></i>Tambah</a></li>
+                <!--<li><a href="javascript:void(0)" onclick="permintaan_tam()"><i class="fa fa-circle-o"></i>Tambah</a></li>-->
               </ul>
             </li>
             <li class="treeview">

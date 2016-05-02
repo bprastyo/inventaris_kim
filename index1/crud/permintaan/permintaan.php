@@ -1,3 +1,4 @@
+<div id="isia"></div>
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
@@ -10,6 +11,7 @@
 <div class="panel panel-default">
   <div class="panel-heading"><b>Permintaan Keluar</b></div>
   <button type="button" class="btn btn-danger pull-right" onclick="permintaan_tam()" >+</button>
+  <button type="button" class="btn btn-danger pull-right" onclick="permintaan()" ><i class="fa fa-refresh"></i></button>
   <table class="table">
     <tr><td><center><b>Nomor Permintaan</b></td><td><center><b>Tanggal Permintaan</b></td><td>
       <center><b>Nama Pemakai</b></td><td><center><b>Kode Barang</b></td><td><center><b>Jumlah</b></center></td>

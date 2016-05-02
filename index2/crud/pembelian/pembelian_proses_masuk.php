@@ -49,4 +49,5 @@ $sql_up->execute();
 //hapus data
 $hapus=$saripdo->prepare("DELETE FROM tb_pembelian WHERE Nomor_pembelian='$kdbeli'");
 $hapus->execute();
+include_once"pembelian_proses.php";
 ?>

@@ -78,7 +78,7 @@ function sperpart_a(){
 function sperpart_tambah_kategori(kdbeli){
 		var url="./crud/sperpart/sperpart_tam_kategori.php";
 		var post="kdbeli="+kdbeli;
-		var response="isi";
+		var response="isia";
 		ajax(url,post,response);
 		}
 
@@ -87,14 +87,14 @@ function sperpart_tambahan(){
 		var n=document.getElementById("nama_barang").value;
 		var url="./crud/sperpart/sperpart_tam_simpan.php";
 		var post='k='+k+"&n="+n;
-		ajax(url,post,"sperpart");
+		ajax(url,post,"isia");
 		alert("Data Berhasil Disimpan");
 		return true;
 		}
 		function sperpart_beli(kdbeli){
 				var url="./crud/pembelian/pembelian_tambah.php";
 				var post="kdbeli="+kdbeli;
-				var response="tampil";
+				var response="isia";
 				ajax(url,post,response);
 				}
 function printdo1(kdprint){
@@ -118,7 +118,7 @@ function printdo1(kdprint){
 	function permintaan_tam(){
 					var url="./crud/permintaan/permintaan_tam.php?rand="+Math.random();
 					var post="";
-					ajax(url,post,"isi");
+					ajax(url,post,"isia");
 					}
 	function tambah(){
 					var url="./crud/permintaan/permintaan_tamb.php?rand="+Math.random();
@@ -142,7 +142,7 @@ function printdo1(kdprint){
 			var s=document.getElementById("satuan").value;
 			var url="./crud/permintaan/permintaan_simpan.php";
 			var post='k='+k+"&n="+n+"&t="+t+"&q="+q+"&j="+j+"&s="+s;
-			ajax(url,post,"aksi");
+			ajax(url,post,"isi");
 			alert("Data Berhasil Disimpan");
 			return true;
 			}
@@ -175,9 +175,12 @@ function pembelian_s(){
 	var j=document.getElementById("jumlah").value;
 	var s=document.getElementById("satuan").value;
 	var url='crud/pembelian/pembelian_simpan.php';
+  //var url='';
 	var post='n='+n+"&a="+a+"&q="+q+"&t="+t+"&k="+k+"&j="+j+"&s="+s;
-	ajax(url,post,"aksi");
+	var response="isia";
+	ajax(url,post,response);
 	alert("Data Berhasil Disimpan");
+	//header('location:"sperpart"');
 	return true;
 	}
 function proses_permintaan(kdproses){
@@ -216,7 +219,7 @@ function laporan_do(){
 		 var sat=document.getElementById("satuan").value;
 		var url='crud/do/do_simpan.php';
 		var post='nodo='+nodo+"&tgl="+tgl+"&noper="+noper+"&ndb="+ndb+"&nokel="+nokel+"&jml="+jml+"&sat="+sat;
-		ajax(url,post,"aksi");
+		ajax(url,post,"isi");
 		alert("Data Berhasil Disimpan");
 		return true;
 		}
@@ -254,6 +257,9 @@ function out_response(response){
 			if(response=="print"){
 				document.getElementById("print").innerHTML=xmlhttp.responseText;
 					}
+					if(response=="isia"){
+						document.getElementById("isia").innerHTML=xmlhttp.responseText;
+							}
 }
 
 

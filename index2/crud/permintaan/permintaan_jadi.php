@@ -34,7 +34,7 @@ $jadi->execute();
  $sper=$kel->fetch();
  $namabrg=$sper['Nama_barang'];
  $jumbar=$sper['Jumlah']-$jumlah;
- echo $jumbar
+ //echo $jumbar
 ?>
 <?php
  $spersim=$saripdo->prepare("UPDATE tb_sparepart SET
@@ -48,4 +48,5 @@ $jadi->execute();
  <?php
  $dell=$saripdo->prepare("DELETE FROM tb_permintaan WHERE No_permintaan='$no_pe'");
  $dell->execute();
+ include_once"permintaan.php";
 ?>

@@ -17,11 +17,22 @@ if ($auto==null) {
    }
 $d=(date('Y-m-d'));
 ?>
-
+<?php
+$statusdo=$saripdo->prepare("select*from tb_do where Nomor_keluar='$kdkeluar'");
+$statusdo->execute();
+$sdo=$statusdo->fetch();
+$sdo=$sdo['Nomor_keluar'];
+if ($sdo==null) {
+     $a = "Belum DO";
+   }else {
+     $a = "Sudah DO";
+   }
+$d=(date('Y-m-d'));
+?>
 <link rel="stylesheet" href="bootstrap/css/dewe.css">
-<div class="container">
+<div class="container-fluid">
      <form class="contact-us form-horizontal" method="post">
-   <legend>DO</legend>
+   <legend>DO =  <?php echo $a; ?></legend>
    <div class="form-group">
      <label>Nomor</label>
      <input type="text" class="form-control" id="nodo" placeholder="Nomor DO"  value="<?php echo $do; ?>">

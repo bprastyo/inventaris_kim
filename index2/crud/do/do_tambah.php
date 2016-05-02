@@ -13,16 +13,17 @@ $auto=$nume['Nomor_DO'];
 if ($auto==null) {
      $do=autonumber('DO00', 2, 2);
    }else {
-     $do=autonumber($auto, 4, 2);
+     $do=autonumber($auto, 2, 2);
    }
 $d=(date('Y-m-d'));
 ?>
 
 <link rel="stylesheet" href="bootstrap/css/dewe.css">
-<div class="container">
+<div class="container-fluid">
      <form class="contact-us form-horizontal" method="post">
    <legend>DO</legend>
    <div class="form-group">
+     <label>Nomor</label>
      <input type="text" class="form-control" id="nodo" placeholder="Nomor DO"  value="<?php echo $do; ?>">
    </div>
    <div class="form-group">

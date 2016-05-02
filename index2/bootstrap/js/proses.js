@@ -143,7 +143,7 @@ function pembelian_kel(){
 function pembelian_keluar(kdbeli){
 	var url='crud/pembelian/pembelian_proses_masuk.php';
 	var post="kdbeli="+kdbeli;
-	var response="aksi";
+	var response="isi";
 	ajax(url,post,response);
 	alert("Data Berhasil Di Proses");
 	return true;
@@ -170,7 +170,7 @@ function pembelian_s(){
 function proses_permintaan(kdproses){
 	var url='crud/permintaan/permintaan_jadi.php';
 	var post="kdproses="+kdproses;
-	var response="aksi";
+	var response="isi";
 	ajax(url,post,response);
 	alert("Data Berhasil Disimpan");
 	return true;
@@ -207,6 +207,12 @@ function laporan_do(){
 		alert("Data Berhasil Disimpan");
 		return true;
 		}
+		function printdo1(kdprint){
+		var url="./crud/laporan/print_do.php";
+		var post="kdprint="+kdprint;
+		var response="isi";
+		ajax(url,post,response);
+		}
 // laporan semua
 function laporan_keluar(){
 	var url="./crud/laporan/barang_keluar.php?rand="+Math.random();
@@ -238,6 +244,9 @@ function out_response(response){
 	if(response=="aksi"){
 		document.getElementById("aksi").innerHTML=xmlhttp.responseText;
 			}
+			if(response=="isia"){
+				document.getElementById("isia").innerHTML=xmlhttp.responseText;
+					}
 }
 
 
@@ -257,7 +266,7 @@ function ajax(url,post,response){
 	xmlhttp.send(post);
   }
 function ajax_fail(){
-	slert('maaf ada gangguan penerimaan data, silahkan coba lagi atau refresh web browser anda');
+	alert('maaf ada gangguan penerimaan data, silahkan coba lagi atau refresh web browser anda');
 	return false;
 	}
 function GetXmlHttpObject(){

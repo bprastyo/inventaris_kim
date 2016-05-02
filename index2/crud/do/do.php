@@ -12,7 +12,7 @@
 
   <div class="panel-heading"><b>DO</b></div>
   <div id="tampil">
-  <button type="button" class="btn btn-danger pull-right" onclick="tam_do()" >+ Tambah DO</button>
+  <button type="button" class="btn btn-danger pull-right" onclick="laporan_do()" ><i class="fa fa-refresh"></i></button>
   <!-- Table -->
   <table class="table">
     <tr><td><center><b>KODE DO</b></td><td><center><b>TGL</b></td><td><center><b>NO PERMINTAAN</b></td><td><center><b>KODE BARANG</b></td></center>
@@ -39,11 +39,11 @@ while($tampil=$pdo->fetch()){
     <td><a href="#" class="list-group-item"><b><?php echo $jumlah.$satuan; ?></b></a></td>
     <td style="width:2%;">
   <div class="btn-group">
-<button type="button" class="btn btn-success" onclick="sperpart_beli(this.value);" value="<?php echo $tampil['Nomor_DO'] ?>">Lihat</button></div></td>
+<button type="button" class="btn btn-success" onclick="printdo1(this.value);" value="<?php echo $tampil['Nomor_DO'] ?>">Lihat</button></div></td>
+<div id="print"></div>
 </tr>
   <?php } ?>
   </table>
-    <div id="print"><b>pe</b></div>
 </div>
 </div>
 <div id="aksi">.

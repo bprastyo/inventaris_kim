@@ -13,5 +13,5 @@
   $sql_simpan=$saripdo->prepare("insert into  tb_do(Nomor_DO,Tanggal_DO,Nomor_permintaan,Kode_barang,Nomor_keluar,Jumlah,Satuan)
   values ('$nodo','$tgl','$noper','$ndb','$nokel','$jml','$sat')");
   $sql_simpan->execute();
-
+  include_once"do.php";
   ?>

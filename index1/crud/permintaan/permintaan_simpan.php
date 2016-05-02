@@ -10,4 +10,5 @@ $s=$_POST['s'];
 $permintaan=$saripdo->prepare("insert into  tb_permintaan(No_permintaan,Tanggal_permintaan,Nama_pemakai,Kode_barang,Jumlah,Satuan)
 values ('$n','$t','$a','$k','$j','$s')");
 $permintaan->execute();
- ?>
+include_once"permintaan.php";
+?>
