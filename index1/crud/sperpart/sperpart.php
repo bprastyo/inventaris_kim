@@ -33,11 +33,15 @@ while($tampil=$pdo->fetch()){
     <td><a href="#" class="list-group-item"><b><?php echo $kode; ?></b></a></td>
     <td><a href="#" class="list-group-item"><b><?php echo $nama; ?></b></a></td>
     <td><a href="#" class="list-group-item"><b><?php
-    $stok=$jumlah;
-    if ($stok>0) {
-      echo $stok; echo $satuan;
-    }else {
-      echo ("<code><b>KOSONG</b></code>");
+    $stok=$jumlah; $n="";
+    if ($stok>3) {
+      echo $n.'<div class="hitam">'.$stok.'&nbsp;'.$satuan.'</div>';
+    }
+    else if ($stok<3 && $stok>0) {
+      echo $n.'<div class="kuning">'.$stok.'&nbsp;'.$satuan.'</div>';
+    }
+    else {
+      echo $n.'<div class="merah">KOSONG</div>';
     }
     ?></b></a></td>
     <td style="width:2%;">
